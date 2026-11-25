@@ -39,8 +39,8 @@ section{padding:36px 0 8px}
 section h2{font-size:1.5rem;margin-bottom:6px}
 .lead{color:var(--muted);margin:0 0 18px}
 
-.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
-.tab{font:600 .85rem/1.25 var(--serif);padding:12px 6px;background:var(--ink2);color:var(--ink-muted);border:1px solid #4a4128;border-radius:6px;cursor:pointer;min-height:56px}
+.tabs{display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:12px}
+.tab{font:600 1rem/1.25 var(--serif);padding:14px 16px;text-align:left;overflow-wrap:anywhere;background:var(--ink2);color:var(--ink-muted);border:1px solid #4a4128;border-radius:6px;cursor:pointer;min-height:56px}
 .tab[aria-selected="true"]{color:var(--gold);border-color:var(--gold);background:var(--ink)}
 .card{background:var(--ink);color:var(--ink-text);border:1px solid var(--gold);border-radius:8px;padding:22px 20px}
 .card h3{color:var(--gold);font-size:1.3rem}
@@ -50,6 +50,8 @@ section h2{font-size:1.5rem;margin-bottom:6px}
 .bar{height:10px;background:#2c281a;border-radius:6px;overflow:hidden}
 .bar i{display:block;height:100%;width:0;border-radius:6px;transition:width .6s ease}
 @media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+@media (min-width:560px){.tabs{grid-template-columns:repeat(3,1fr)}.tab{font-size:.85rem;padding:12px 8px;text-align:center}}
+@media (max-width:420px){.stats li{grid-template-columns:1fr;gap:4px}.card{padding:18px 16px}}
 .path{margin-top:22px;border-top:1px solid #4a4128;padding-top:16px}
 .path h4{font:600 .95rem var(--serif);color:var(--gold);margin:0 0 10px}
 .year{margin:0 0 12px}
